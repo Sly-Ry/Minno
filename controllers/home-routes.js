@@ -59,6 +59,7 @@ router.get('/signup', (req, res) => {
     res.render('signup');
 });
 
+// GET single Post route
 router.get('/post/:id', (req, res) => {
     Post.findOne({
         where: {
