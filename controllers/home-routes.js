@@ -62,9 +62,7 @@ router.get('/signup', (req, res) => {
 // GET single Post route
 router.get('/post/:id', (req, res) => {
     Post.findOne({
-        where: {
-            id: req.params.id
-        },
+        where: {id: req.params.id},
         attributes: [
             'id',
             'post_url',
@@ -92,10 +90,8 @@ router.get('/post/:id', (req, res) => {
             return;
         }
 
-        //  serialize the data
         const post = dbPostData.get({ plain: true });
 
-        // pass data to template
         res.render('single-post', { 
             post,
             loggedIn: req.session.loggedIn
