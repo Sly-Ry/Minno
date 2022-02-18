@@ -48,7 +48,7 @@ router.get('/:id', (req, res) => {
 });
 
 // POST new User route
-router.post('/', withAuth, (req, res) => {
+router.post('/', (req, res) => {
     User.create({
         username: req.body.username,
         email: req.body.email,
@@ -72,7 +72,7 @@ router.post('/', withAuth, (req, res) => {
 // POST login User route
 router.post('/login', withAuth, (req, res) => {
     User.findOne({
-        where: {email: req.body.email}
+        where: { email: req.body.email }
     })
     .then(dbUserData => {
         if(!dbUserData) {
@@ -81,6 +81,7 @@ router.post('/login', withAuth, (req, res) => {
         }
 
         const validPassword = dbUserData.checkPassword(req.body.password);
+        
         if (!validPassword){
             res.status(400).json({ message: 'Wrong password.' });
             return;
@@ -113,29 +114,25 @@ router.post('/logout', withAuth,  (req, res) => {
 router.put('/:id', withAuth, (req, res) => {
     User.update(req.body, {
         individualHooks: true,
-        where: {
-          id: req.params.id
-        }
+        where: { id: req.params.id }
     })
-        .then(dbUserData => {
-            if (!dbUserData[0]) {
-                res.status(404).json({ message: 'No user found with this id' });
-                return;
-            }
-            res.json(dbUserData);
-        })
-        .catch(err => {
-            console.log(err);
-            res.status(500).json(err);
-        });
+    .then(dbUserData => {
+        if (!dbUserData[0]) {
+            res.status(404).json({ message: 'No user found with this id' });
+            return;
+        }
+        res.json(dbUserData);
+    })
+    .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    });
 });
 
 // DELETE User route
 router.delete('/:id', withAuth, (req, res) => {
     User.destroy({
-        where: {
-            id: req.params.id
-        }
+        where: { id: req.params.id }
     })
     .then(dbUserData => {
         if (!dbUserData) {

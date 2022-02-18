@@ -39,26 +39,6 @@ router.get('/', (req, res) => {
     });
 });
 
-// GET login redirect route
-router.get('/login', (req, res) => {
-    if (req.session.loggedIn) {
-        res.redirect('/');
-        return;
-    }
-
-    res.render('login');
-});
-
-// GET submit redirect route
-router.get('/signup', (req, res) => {
-    if (req.session.loggedIn) {
-        res.redirect('/');
-        return;
-    }
-
-    res.render('signup');
-});
-
 // GET single Post route
 router.get('/post/:id', (req, res) => {
     Post.findOne({
@@ -101,6 +81,26 @@ router.get('/post/:id', (req, res) => {
         console.log(err);
         res.status(500).json(err);
     });
+});
+
+// GET login redirect route
+router.get('/login', (req, res) => {
+    if (req.session.loggedIn) {
+        res.redirect('/');
+        return;
+    }
+
+    res.render('login');
+});
+
+// GET submit redirect route
+router.get('/signup', (req, res) => {
+    if (req.session.loggedIn) {
+        res.redirect('/dashboard');
+        return;
+    }
+
+    res.render('signup');
 });
 
 module.exports = router;
