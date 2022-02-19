@@ -1,6 +1,5 @@
 const router = require('express').Router();
 const { User, Post, Comment } = require('../../models');
-const withAuth = require('../../utils/auth');
 
 // GET all User routes
 router.get('/', (req, res) => {
@@ -59,8 +58,8 @@ router.post('/', (req, res) => {
             req.session.user_id = dbUserData.id;
             req.session.username = dbUserData.username;
             req.session.loggedIn = true;
-            
-            res.json(dbUserData)
+    
+            res.json(dbUserData);
         });
     })
     .catch(err => {
@@ -70,7 +69,7 @@ router.post('/', (req, res) => {
 });
 
 // POST login User route
-router.post('/login', withAuth, (req, res) => {
+router.post('/login', (req, res) => {
     User.findOne({
         where: { email: req.body.email }
     })
@@ -99,7 +98,7 @@ router.post('/login', withAuth, (req, res) => {
 });
 
 // POST logout User route
-router.post('/logout', withAuth,  (req, res) => {
+router.post('/logout',  (req, res) => {
     if (req.session.loggedIn) {
         req.session.destroy(() => {
             res.status(204).end();
@@ -111,7 +110,7 @@ router.post('/logout', withAuth,  (req, res) => {
 });
 
 // PUT update User route
-router.put('/:id', withAuth, (req, res) => {
+router.put('/:id', (req, res) => {
     User.update(req.body, {
         individualHooks: true,
         where: { id: req.params.id }
@@ -130,7 +129,7 @@ router.put('/:id', withAuth, (req, res) => {
 });
 
 // DELETE User route
-router.delete('/:id', withAuth, (req, res) => {
+router.delete('/:id', (req, res) => {
     User.destroy({
         where: { id: req.params.id }
     })

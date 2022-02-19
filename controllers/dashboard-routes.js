@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Post, User, Comment } = require('../models');
+const { Post, Comment, User } = require('../models');
 const withAuth = require('../utils/auth');
 
 // GET all POST route
@@ -8,12 +8,6 @@ router.get('/', withAuth, (req, res) => {
     console.log('=======================');
     Post.findAll({
         where: { user_id: req.session.user_id },
-        attributes: [
-            'id',
-            'post_url',
-            'title',
-            'created_at'
-        ],
         include: [
             {
                 model: Comment,
@@ -32,6 +26,8 @@ router.get('/', withAuth, (req, res) => {
     .then(dbPostData => {
         const posts = dbPostData.map(post => post.get({ plain: true }));
         res.render('dashboard', { posts, loggedIn: true });
+        console.log(posts);
+        console.log("You're logged in!")
     })
     .catch(err => {
         console.log(err);
@@ -43,12 +39,6 @@ router.get('/', withAuth, (req, res) => {
 router.get('/edit/:id', (req, res) => {
     Post.findOne({
         where: { id: req.params.id},
-        attributes: [
-            'id',
-            'post_url',
-            'title',
-            'created_at'
-        ],
         include: [
             {
                 model: Comment,
