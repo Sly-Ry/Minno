@@ -1,34 +1,41 @@
-# flappy birdf
+# good stuff
 
-  ![Badge for GitHub repo top language](http://img.shields.io/github/languages/top/Sly-Ry/undefined?style=flat&logo=appveyor)
+  ![Badge for GitHub repo top language](http://img.shields.io/github/languages/top/Sly-Ry/readme?style=flat&logo=appveyor)
 
-  ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/Sly-Ry/undefined?style=flat&logo=appveyor)
+  ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/Sly-Ry/readme?style=flat&logo=appveyor)
 
   ## Description 
   
-  its dope
+  its cool
   
   ## Table of Contents
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [Contributing](#contributing)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
   * [License](#license)
   ## Installation
 
   *Set up intructions:*
 
-  install it and then clap
+  install
   ## Usage 
 
   *Examples for use:*
   
-  use this stuff bruh
+  use it plz
 
   ## Contributing
   
   *If you would like to contribute to this application, follow these guidelines for how to do so.*
 
-  text or call me
+  call me
+
+  ## Tests
+  
+  *Tests for application.*
+  
+  some tests
 
   ## License
 
@@ -36,12 +43,15 @@
   
   ---
   
-  ## Question?
+  ## Comments
   
-  <img src="https://avatars.githubusercontent.com/u/93052960?v=4" alt="Sly-Ry" width="40%" />
+  <img src="https://avatars.githubusercontent.com/u/93052960?v=4" alt="Sly-Ry" width="30%" />
   
-  For any questions, please contact me with the information below:
+  For any questions and/or suggestions, please contact me:
  
-  GitHub: [@Sly-Ry](https://api.github.com/users/Sly-Ry)
+  GitHub: [@Sly-Ry](https://github.com/Sly-Ry)
   
- 
+    
+  Email: email
+    
+  
