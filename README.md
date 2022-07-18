@@ -1,22 +1,14 @@
-# undefined
+# title
 
-  ![Badge for GitHub repo top language](http://img.shields.io/github/languages/top/Sly-Ry/title?style=flat&logo=appveyor)
+  ![Badge for GitHub repo top language](http://img.shields.io/github/languages/top/Sly-Ry/undefined?style=flat&logo=appveyor)
 
-  ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/Sly-Ry/title?style=flat&logo=appveyor)
+  ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/Sly-Ry/undefined?style=flat&logo=appveyor)
 
   ## Description 
   
-  its cool
+  Project Description
   
-  ## Table of Contents* [Installation](#installation)* [Contributing](#contributing)* [License](#license)## Installation
-
-    *Set up intructions:*
-
-    plug it in and forget## Contributing
-    
-    *If you would like to contribute to this application, follow these guidelines for how to do so.*
-
-    check for bugs and contact me if necessary## License
+  ## Table of Contents* [License](#license)## License
 
   MIT
   ---
