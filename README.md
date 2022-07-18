@@ -1,12 +1,12 @@
-# good stuff
+# the best repo
 
-  ![Badge for GitHub repo top language](http://img.shields.io/github/languages/top/Sly-Ry/readme?style=flat&logo=appveyor)
+  ![Badge for GitHub repo top language](http://img.shields.io/github/languages/top/Sly-Ry/repo time?style=flat&logo=appveyor)
 
-  ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/Sly-Ry/readme?style=flat&logo=appveyor)
+  ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/Sly-Ry/repo time?style=flat&logo=appveyor)
 
   ## Description 
   
-  its cool
+  Project Description
   
   ## Table of Contents
   * [Installation](#installation)
@@ -18,28 +18,28 @@
 
   *Set up intructions:*
 
-  install
+  Install it
   ## Usage 
 
   *Examples for use:*
   
-  use it plz
+  use it and love it
 
   ## Contributing
   
   *If you would like to contribute to this application, follow these guidelines for how to do so.*
 
-  call me
+  pull request or email me
 
   ## Tests
   
   *Tests for application.*
   
-  some tests
+  no tests
 
   ## License
 
-  MIT
+  BSD 3 License
   
   ---
   
@@ -52,6 +52,10 @@
   GitHub: [@Sly-Ry](https://github.com/Sly-Ry)
   
     
-  Email: email
+  Email: ryan.williams93@aol.com
+    
+  
+    
+  LinkedIn: https://www.linkedin.com/in/ryan-williams-338334224/
     
   
