@@ -1,4 +1,4 @@
-# Pig hat
+# flappy birdf
 
   ![Badge for GitHub repo top language](http://img.shields.io/github/languages/top/Sly-Ry/undefined?style=flat&logo=appveyor)
 
@@ -6,37 +6,34 @@
 
   ## Description 
   
-  its cool
+  its dope
   
   ## Table of Contents
     * [Installation](#installation)
     * [Usage](#usage)
     * [Contributing](#contributing)
-    * [Tests](#tests)
   * [License](#license)
-    ## Installation
+  ## Installation
 
-    *Set up intructions:*
+  *Set up intructions:*
 
-    plug it in
-    ## Usage 
+  install it and then clap
+  ## Usage 
 
-    * Examples for use:*
-    
-    use it bruh
-    ## Contributing
-    
-    *If you would like to contribute to this application, follow these guidelines for how to do so.*
+  *Examples for use:*
+  
+  use this stuff bruh
 
-    you turn it on and then suck it
-    ##Tests
-    
-    *Tests for application.*
-    
-    there are no test
+  ## Contributing
+  
+  *If you would like to contribute to this application, follow these guidelines for how to do so.*
+
+  text or call me
+
   ## License
 
   MIT
+  
   ---
   
   ## Question?
@@ -47,3 +44,4 @@
  
   GitHub: [@Sly-Ry](https://api.github.com/users/Sly-Ry)
   
+ 
